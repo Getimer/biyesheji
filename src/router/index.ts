@@ -62,8 +62,8 @@ const routes: Array<RouteRecordRaw> = [
 
 
 const router = createRouter({
-  // history: createWebHistory(process.env.BASE_URL),
-  history: createWebHistory('hash'),
+  history: createWebHistory(process.env.BASE_URL),
+  // history: createWebHistory('hash'),
   routes: routes
 })
 
