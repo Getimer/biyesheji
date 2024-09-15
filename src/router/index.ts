@@ -32,7 +32,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/notice',
     name: 'back',
     component: () => import('../views/NoticeManagement.vue')
-  },{
+  }, {
     path: '/admin/bookmanage',
     name: 'admin-bookmanage',
     component: () => import('../views/admin/BookManagement.vue'),
@@ -62,7 +62,8 @@ const routes: Array<RouteRecordRaw> = [
 
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  // history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory('hash'),
   routes: routes
 })
 
