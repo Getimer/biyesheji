@@ -1,9 +1,9 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
 
-  assetsDir: 'src/assets',
+  // assetsDir: 'src/assets',
   // parallel: false,
-  publicPath: './',
+  publicPath: './dist/',
 
 
   transpileDependencies: true,
